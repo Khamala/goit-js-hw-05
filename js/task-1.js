@@ -1,13 +1,19 @@
 
 const getUserNames = users => {
 
-    let arrNames = [];
-
-    users.forEach(user => arrNames.push(user.name));
-    
-    return arrNames;
+   return users.map(user => user.name);
 };
 
+
+/*
+// ТАК ТОЖЕ МОЖНО БЫЛО СДЕЛАТЬ?
+
+const getUserNames = users => {
+    let arrNames = [];
+    users.forEach(user => arrNames.push(user.name));
+    return arrNames;
+};
+*/
 
 
 console.log(
